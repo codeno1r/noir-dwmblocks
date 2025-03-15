@@ -8,7 +8,7 @@ static const Block blocks[] = {
 	{"", 		"brightness.sh",		0,			14},
 	{"", 		"volume.sh",		0,			10},
 	{"", 		"battery.sh",		5,			3},
-	{"", "date '+%b %d (%a) %I:%M%p' ",					1,		0},
+	{"", "date '+%b %d (%a) %I:%M%p '",					1,		0},
 };
 
 // Define StatusCMD
