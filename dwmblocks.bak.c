@@ -58,6 +58,8 @@ static int statusContinue = 1;
 
 void getcmd(const Block *block, char *output)
 {
+// if (block->signal)
+// *output++ = block->signal;
 	//make sure status is same until output is ready
 	char tempstatus[CMDLENGTH] = {0};
 	strcpy(tempstatus, block->icon);
