@@ -2,9 +2,9 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"", 		"volume.sh",		0,			10},
-	{"", 		"cpu.sh",		5,			0},
-	{" ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
-	{"", "date '+%b %d (%a) %I:%M%p'",					5,		0},
+	{" ", 		"top -bn1 | grep load | awk '/^top/ {print $11}' | sed s/,/%/",		3,			18},
+	{" ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
+	{"", "date '+%b %d (%a) %I:%M%p'",					1,		0},
 };
 
 //sets delimiter between status commands. NULL character ('\0') means no delimiter.
