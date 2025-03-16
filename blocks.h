@@ -1,7 +1,8 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"  ", 		"top -bn1 | grep load | awk '/^top/ {print $11}' | sed s/,/%/",		3,			18},
+//	{"  ", 		"top -bn1 | grep load | awk '/^top/ {print $11}' | sed s/,/%/",		3,			18},
+	{"  ", 		"cpu.sh",		3,			18},
 	{" ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
 	{"󰖂 ", 		"nordlayer status --silent | grep VPN | sed s/'VPN: '//",		5,			15},
 	{" ", 		"network.sh",		5,			16},
