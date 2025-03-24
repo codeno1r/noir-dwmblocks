@@ -5,6 +5,7 @@ static const Block blocks[] = {
 	{" ", "memory.sh",	5,		0},
 	{"", 		"nlstatus.sh",		5,			17},
 	{"", 		"network.sh",		5,			16},
+	{"", 		"nightlight.sh",		0,			15},
 	{"", 		"brightness.sh",		0,			14},
 	{"", 		"volume.sh",		0,			10},
 	{"", 		"battery.sh",		5,			3},
